@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Multiple Excel File Uploader</title>
+    <meta charset="utf-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 800px;
+            white-space: nowrap;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        caption {
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="files" enctype="multipart/form-data">
+        <input type="file" name="files[]" id="file-input" multiple>
+    </form>
+    <div id="filters"></div>
+    <div id="result"></div>
+    <script src="main.js"></script>
+</body>
+
+</html>
